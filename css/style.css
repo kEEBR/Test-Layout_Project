@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Post No Bills Jaffna Regular"),
-    url("../fonts/PostNoBillsJaffnaSemiBold/PostNoBillsJaffna-Regular.woff")
+    url("../fonts/PostNoBillsJaffnaSemiBold/PostNoBillsJaffna-SemiBold.woff")
       format("woff");
 }
 @font-face {
@@ -15,6 +15,24 @@
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"),
+    url("../fonts/Playfair/Playfairdisplaybold.woff2") format("woff2"),
+    url("../fonts/Playfair/Playfairdisplaybold.woff") format("woff"),
+    url("../fonts/Playfair/Playfairdisplaybold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/Roboto/Robotolight.woff2") format("woff2"),
+    url("../fonts/Roboto/Robotolight.woff") format("woff"),
+    url("../fonts/Roboto/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,27 +41,211 @@ a {
   text-decoration: none;
 }
 .header {
-    height: 840px;
-    background: url(../img/header/Rectangle.png);
+  height: 840px;
+  background: url(../img/header/Rectangle.png);
 }
 .header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.header-container {
+.container {
+  max-width: 1280px;
+  margin: 0px auto;
+  padding: 0px 10px;
 }
-.logo {
+.logo-main {
   font-family: "Post No Bills Jaffna Regular", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 36px;
+  margin: 0px 0px 0px 0px;
   color: #ffffff;
+  display: block;
+  line-height: 54px;
 }
 .logo-under {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  display: block;
 }
-.menu{
-    display: flex;
-    justify-content: flex-end;
+.menu {
+  display: flex;
+  margin: 25px 0px 0px 0px;
+}
+.header-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 40px;
+  color: #ffffff;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 582px;
+  margin: 176px 0px 0px 0px;
+}
+.first-screen_title {
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #d4c17f;
+}
+.header-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mouse {
+  display: flex;
+  justify-content: center;
+  margin: 85px 0px 0px 0px;
+}
+#mouse-img {
+  width: 40px;
+  height: 40px;
+}
+.first-screen_contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 0px 0px 0px;
+}
+.first-screen_contacts p {
+  font-family: "Raleway", sans-serif;
+  padding-left: 15px;
+  color: #ffffff;
+}
+.gps-contacts {
+  display: flex;
+}
+.phone-contacts {
+  display: flex;
+}
+.apartments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apartments-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 120px 0px 0px 0px;
+  width: 794px;
+}
+.apartments-info_pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.apartments_about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 55px 0px 0px 0px;
+  text-align: center;
+}
+.apartments_picture {
+  display: block;
+}
+.apartments_about p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+#settle {
+  margin-left: 60px;
+}
+#house {
+  margin-left: 40px;
+}
+#fountain {
+  margin-left: 15px;
+}
+#bike {
+  margin-right: 25px;
+}
+.stock {
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.apps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #242b33;
+}
+.stock-title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #d4c17f;
+  margin: 120px 0px 0px 0px;
+}
+.stock-pictures_1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px 0px 0px;
+}
+.stock-pictures_2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 0px 0px;
+}
+.mortgage {
+}
+.mortgage-form {
+  display: flex;
+  min-height: 560px;
+  width: 1920px;
+  background: url(../img/mortgage/Rectangle.jpg);
+}
+.mortgage-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 0px 405px;
+}
+.mortgage-form_title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0px 140px 0px 0px;
+  color: #d4c17f;
+}
+.mortgage-form_text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 0px 0px 0px;
+  color: #ffffff;
 }
